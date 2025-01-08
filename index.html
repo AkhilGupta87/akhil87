@@ -3,32 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Screenshots</title>
-    <link rel="stylesheet" href="style.css">
+    <title>App Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .description h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .description p {
+            margin: 5px 0 0;
+            color: #666;
+        }
+
+        .image {
+            flex-shrink: 0;
+        }
+
+        .image img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mobile App Screenshots</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Feature</th>
-                <th>Screenshot</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Login Page</td>
-                <td><img src="images/login.png" alt="Login Page" style="width:200px;"></td>
-            </tr>
-            <tr>
-                <td>Dashboard</td>
-                <td><img src="images/dashboard.png" alt="Dashboard" style="width:200px;"></td>
-            </tr>
-            <tr>
-                <td>Settings</td>
-                <td><img src="images/settings.png" alt="Settings" style="width:200px;"></td>
-            </tr>
-        </tbody>
-    </table>
+    <h1>Mobile App Features</h1>
+    <div class="container">
+        <div class="item">
+            <div class="description">
+                <h2>Login Page</h2>
+                <p>The login page allows users to securely log into the app using their credentials. It features a sleek and minimalistic design.</p>
+            </div>
+            <div class="image">
+                <img src="images/login-page.png" alt="Login Page">
+            </div>
+        </div>
+        <div class="item">
+            <div class="description">
+                <h2>Dashboard</h2>
+                <p>The dashboard provides an overview of the app's features, displaying key information and metrics in an organized manner.</p>
+            </div>
+            <div class="image">
+                <img src="https://via.placeholder.com/300x400?text=Dashboard" alt="Dashboard">
+            </div>
+        </div>
+        <div class="item">
+            <div class="description">
+                <h2>Settings</h2>
+                <p>The settings page allows users to customize their app experience, including preferences, notifications, and account details.</p>
+            </div>
+            <div class="image">
+                <img src="https://via.placeholder.com/300x400?text=Settings" alt="Settings">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
